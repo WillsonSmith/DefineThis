@@ -1,0 +1,8 @@
+extends layout
+
+block content
+  div(class='container-home')
+    h1= title
+    form(method='post' action='search/')
+      input(type='text' name='word' class='wordInput' placeholder='find word')
+      input(type='submit' class='search' value='Define')

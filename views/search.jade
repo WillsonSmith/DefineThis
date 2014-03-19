@@ -1,0 +1,13 @@
+extends layout
+
+block content
+	div(class='container-result')
+		a(href='/')
+			img( class='home-icon' src='/images/home.svg')
+		h1 #{word}
+
+		ul
+			- for def in definition
+				div(class='resultItem')
+					div(class='type') #{def.type}:
+					div(class='definition') #{def.definition}
